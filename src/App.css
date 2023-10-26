@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sideBar{
+  background-color: rgb(0,7,61);
+  color: white;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: black;
+  gap: 10px;
+  padding: 5px 10px;
+}
+a{
+  text-decoration: none;
+}
+.link:hover {
+  background-color: rgb(45,51,89);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.active {
+  background-color: rgb(45,51,89);
+}
+.main-container {
+  display: flex;
+}
+.form-error {
+  font-size: 1.4rem;
+  color: #b22b27;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url('logo.svg') no-repeat;
+  width: 25px;
+  height: 25px;
+  border-width: thin
 }

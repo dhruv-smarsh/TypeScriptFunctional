@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AppRouting from "./AppRouting";
+import SideMenu from "./component/SideMenu";
+import {BrowserRouter as Router} from 'react-router-dom'
+import SideMenu1 from "./component/SideMenu1";
+import SideMenu2 from "./component/SideMenu2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+          <Router>
+              {/*<SideMenu/>*/}
+              {/*<SideMenu2/>*/}
+              <SideMenu1/>
+          </Router>
+      </>
   );
 }
 
